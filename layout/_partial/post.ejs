@@ -1,8 +1,5 @@
 <article id="<%= post.layout %>-<%= post.slug %>" 
   class="article article-type-<%= post.layout %>" itemprop="blogPost">
-    <div class="post-meta flex-row">
-        <%- partial('post/tag') %>
-    </div>
     <div class="post-body">
         <aside class="post-widget" id="post-widget">
 
@@ -35,15 +32,22 @@
             
             <blockquote>
                 <p>
-                本文地址：
+                Link:
                 <a href="<%- page.permalink%>" target="_blank" rel="external"><%- page.permalink %></a>
                 </p>
                 <footer><cite><a href="<%- config.url %>">@<%- config.title %></a></cite></footer>
             </blockquote>
             </div>
+
+            <div class="post-footer flex-row flex-middle">
+                <%- partial('post/tag') %>
+            </div>
+
             <%- partial('post/nav') %>
             
             <%- partial('post/comment') %>
         </div>
+
+
     </div>
 </article>

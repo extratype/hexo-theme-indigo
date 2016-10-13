@@ -11,7 +11,8 @@
 
 .post-time {
     font-size: 13px;
-    color: @secondaryTextColor
+    color: @secondaryTextColor;
+    padding: 0 10px 0 0
 }
 
 .post-title {
@@ -52,11 +53,24 @@
         display: inline;
     }
     a {
-        color: @accentColor;
+        color: @secondaryTextColor;
         &:hover {
             color: @accentColor;
         }
     }
+}
+
+.article-category-link {
+    display: inline;
+    color: @secondaryTextColor;
+    &:hover {
+        color: @accentColor;
+    }
+}
+
+.article-category-separator {
+    display: inline;
+    color: @secondaryTextColor;
 }
 
 .article-tag-list {

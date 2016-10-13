@@ -2,7 +2,11 @@
 	<%- list_categories(post.categories, {
 	  show_count: false,
 	  class: 'article-category',
-		style: 'list'
+		style: 'none',
+		transform: function (t,s,d) {
+	  		return '<div class=\'article-category-separator\'>/</div>' + t;
+		},
+		separator: ''
 	}) %>
 <% } %>
 

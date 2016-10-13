@@ -59,7 +59,34 @@
         color: lighten(@accentColor, 10%);
     }
 
+    .article-category-link {
+        color: @lightPrimaryColor;
+        &:hover {
+            color: lighten(@accentColor, 10%);
+        }
+    }
+
+    .article-category-separator {
+        color: @lightPrimaryColor;
+    }
+
+    .page-time {
+        padding: 0 10px 0 0;
+    }
 }
+
+//.article-category-link {
+//  display: inline;
+//  color: @secondaryTextColor;
+//  &:hover {
+//    color: @accentColor;
+//  }
+//}
+//
+//.article-category-separator {
+//  display: inline;
+//  color: @secondaryTextColor;
+//}
 
 @media screen and (max-width:1240px) {
 

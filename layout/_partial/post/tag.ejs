@@ -1,6 +1,9 @@
 <% if (post.tags && post.tags.length){ %>
 	<%- list_tags(post.tags, {
             show_count: false,
-            class: 'article-tag'
+            class: 'article-tag',
+            transform: function (t,s,d) {
+                return '#' + t;
+            }
           }) %>
 <% } %>
